@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,200;1,400&display=swap");
+
+/* Global Start  */
+* {
+  box-sizing: border-box !important;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  padding: 30px 0;
+}
+
+.section h2.section-head {
+  color: #111;
+  text-align: center;
+  margin-bottom: 35px;
+  text-transform: capitalize;
+}
+
+.section h2.section-head::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin: 20 auto;
+  background: #6f1e51;
+  margin: 12px auto !important;
+}
+/* Global End  */
+
+/* Header Start */
+#header {
+  background-color: #6f1e51;
+  color: #fff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+#menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  font-size: 2rem;
+  font-weight: 200;
+  font-style: italic;
+  margin: 0;
+}
+
+#menu li {
+  display: inline-block;
+}
+
+#menu li a {
+  display: block;
+  padding: 6px 10px;
+  color: #fff;
+}
+
+#menu li a:hover {
+  background: #b80375;
+}
+/* Header End  */
+
+/* Banner Start  */
+#banner {
+  background: url("../assets/images/banner.jpg") no-repeat 0 0;
+  background-size: cover;
+}
+
+.banner-title h1 {
+  color: rgba(255, 255, 255, 1);
+  display: inline-block;
+  padding: 10px;
+  text-transform: capitalize;
+  font-size: 2rem;
+  text-shadow: 1px 1px #111;
+}
+
+.banner-title p.lead {
+  padding: 10px;
+  background: rgba(27, 27, 37, 0.5);
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Banner End  */
+
+/* service box  start */
+.service-box {
+  text-align: center;
+}
+
+.service-box i.fa {
+  font-size: 30px;
+  margin-bottom: 10px !important;
+}
+/* service box  end */
+
+/* testimonial start  */
+#testimonials {
+  color: #fff;
+  background: linear-gradient(rgba(52, 73, 94, 0.7), rgba(52, 73, 94, 0.7)),
+    url("../assets/images/testimonial-bg.jpg") no-repeat 0 0;
+  background-size: cover;
+  padding: 40px 0;
+  position: relative;
+}
+
+.testimonial img {
+  border-radius: 50%;
+}
+
+.testimonial .author,
+.testimonial .author-company {
+  text-transform: capitalize;
+}
+
+/* testimonial end  */
+
+/* resent news start  */
+.news-post img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.news-post h3 {
+  font-size: 1.35rem;
+  margin-bottom: 12px !important;
+}
+
+.news-post h3 a {
+  color: #111;
+  text-transform: capitalize;
+}
+
+.post-date {
+  font-size: 13px;
+  color: rgba(17, 17, 17, 0.8);
+  margin-bottom: 5px;
+}
+
+.post-date::before {
+  content: "\f073";
+  font-family: FontAwesome;
+  padding-right: 7px;
+}
+
+a.readmore {
+  font-size: 14px;
+  color: #111;
+  text-transform: capitalize;
+}
+
+a.readmore::after {
+  content: "\f101";
+  font-family: FontAwesome;
+  padding-left: 6px;
+}
+
+/* resent news end */
+
+/* footer start  */
+#footer-sidebar {
+  color: #fff;
+  background: rgba(218, 9, 141, 0.74);
+  padding: 10px 0;
+}
+
+.footer-widget h4 {
+  text-transform: capitalize;
+  text-shadow: 0.5px 0.5px #fff;
+}
+
+.footer-widget h4:after {
+  content: "";
+  background: #fff;
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 5px 0;
+  border-radius: 2px;
+}
+
+.footer-widget a {
+  color: #fff;
+}
+
+.latest-news {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.latest-news li {
+  margin-bottom: 3px;
+}
+
+.latest-news li:before {
+  content: "\f101";
+  font-family: FontAwesome;
+  padding-right: 5px;
+}
+
+#footer {
+  background: #6f1e51;
+  color: #fff;
+  padding: 10px 0;
+}
+
+#social-icons {
+  list-style: none;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+#social-icons li {
+  display: inline-block;
+  padding-left: 5px;
+}
+
+#social-icons li a {
+  color: #fff;
+  font-size: 22px;
+}
+
+/* footer end  */
+
+/* brakpoint 768px  */
+
+@media (max-width: 768px) {
+  #header {
+    height: auto;
+  }
+  #logo {
+    text-align: center;
+  }
+
+  #menu {
+    text-align: center;
+  }
+
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  .service-box {
+    margin-bottom: 25px;
+  }
+
+  .testimonial-1 {
+    margin-bottom: 20px;
+  }
+
+  .testimonial {
+    text-align: center;
+  }
+
+  #news .section {
+    padding-bottom: 0 !important;
+  }
+
+  .news-post {
+    margin-bottom: 30px;
+  }
+
+  .footer-widget {
+    margin-bottom: 20px;
+  }
+
+  #footer {
+    text-align: center;
+  }
+
+  #social-icons {
+    margin-top: 10px;
+  }
+}
